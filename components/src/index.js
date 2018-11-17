@@ -16,18 +16,23 @@ const App = () => {
                     text="hi 1"
                 />
             </ApprovalCard>
-            <CommentDetail 
-                author="alex" 
-                timeAgo="Today at 5:00PM" 
-                image={faker.image.avatar()} 
-                text="hi 2" 
-            />
-            <CommentDetail 
-                author="Jane"  
-                timeAgo="Today at 6:00PM" 
-                image={faker.image.avatar()} 
-                text="hi 3" 
-            />
+            <ApprovalCard>
+                <CommentDetail 
+                    author="alex" 
+                    timeAgo="Today at 5:00PM" 
+                    image={faker.image.avatar()} 
+                    text="hi 2" 
+                />
+            </ApprovalCard>
+            <ApprovalCard>
+                <CommentDetail 
+                    author="Jane"  
+                    timeAgo="Today at 6:00PM" 
+                    image={faker.image.avatar()} 
+                    text="hi 3" 
+                />
+            </ApprovalCard>
+            
         </div>
     )
 };
