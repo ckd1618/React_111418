@@ -11,6 +11,7 @@ class App extends React.Component {
 
     state = { lat: null, errorMessage: '' }
 
+    // this component triggers right after the constructor i.e. state
     componentDidMount() {
         window.navigator.geolocation.getCurrentPosition(
             (position) => this.setState({ lat: position.coords.latitude }),
